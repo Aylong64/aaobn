@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friends</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+    <section>
+    	<img src="img/friends.jpg" id="first">
+    	<img src="img/friends.jpg" id="last">
+        <h1 id="text">Friends</h1>
+    </section>
+
+    <div class="ab-text">
+    	<div class="heading">
+    		<h2>Friends</h2>
+    		<p>There are friends,there is family,
+    		and then there are friends that become family.</p>
+    	</div>
+
+    	<div class="container">
+           <div class="box box1">
+           	   <div class="in">
+           	   	<p>Ayomide</p>
+           	   </div>
+           </div>
+         
+            <div class="box box2">
+           	   <div class="in">
+           	   	<p>Amoke</p>
+           	   </div>
+           </div>
+
+           <div class="box box3">
+           	   <div class="in">
+           	   	<p>Oreoluwa</p>
+           	   </div>
+           </div>
+
+           <div class="box box4">
+           	   <div class="in">
+           	   	<p>Bukunmi</p>
+           	   </div>
+           </div>
+
+           <div class="box box5">
+           	   <div class="in">
+           	   	<p>Nonso</p>
+           	   </div>
+           </div>
+    	</div>
+    </div>
+
+    <script>
+    	let first = document.getElementById("first");
+    	let last = document.getElementById("last");
+    	let text = document.getElementById("text");
+
+      window.addEventListener('scroll', function(){
+      	var value = window.scrollY;
+
+      	first.style.top = value * 0.7 + 'px';
+      	last.style.bottom = value * 0.7 + 'px';
+      	text.style.top = value * 1 + 'px';
+        
+      })
+    </script>
+</body>
+</html>
